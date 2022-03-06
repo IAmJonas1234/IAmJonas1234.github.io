@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <p>Test</p>
-        <a href="test.txt" Download>Click here</a>
-        <p>1234</p>
-        <p>5678</p>
-    </body>
+<body>
+    <a id="download" href="lsedit_debug.zip" Download style="display:none;"></a>
+    <button onclick="download()">Download LSEdit Debug Build (24.02.2022)</button>
+
+    <script>
+        function download() {
+            document.getElementById("download").click();
+        }
+    </script>
+</body>
 </html>
