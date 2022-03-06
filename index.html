@@ -3,49 +3,42 @@
 <body>
     <style>
         /* CSS */
-        .button-7 {
-            background-color: #0095ff;
-            border: 1px solid transparent;
-            border-radius: 3px;
-            box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+        .button-37 {
+            background-color: #13aa52;
+            border: 1px solid #13aa52;
+            border-radius: 4px;
+            box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
             box-sizing: border-box;
             color: #fff;
             cursor: pointer;
-            display: inline-block;
-            font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-            font-size: 13px;
+            font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
             font-weight: 400;
-            line-height: 1.15385;
-            margin: 0;
             outline: none;
-            padding: 8px .8em;
-            position: relative;
+            outline: 0;
+            padding: 10px 25px;
             text-align: center;
-            text-decoration: none;
+            transform: translateY(0);
+            transition: transform 150ms, box-shadow 150ms;
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
-            vertical-align: baseline;
-            white-space: nowrap;
         }
 
-        .button-7:hover,
-        .button-7:focus {
-            background-color: #07c;
+        .button-37:hover {
+            box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+            transform: translateY(-2px);
         }
 
-        .button-7:focus {
-            box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-        }
-
-        .button-7:active {
-            background-color: #0064bd;
-            box-shadow: none;
+        @media (min-width: 768px) {
+            .button-37 {
+                padding: 10px 30px;
+            }
         }
     </style>
 
     <a id="download" href="lsedit_debug.zip" Download style="display:none;"></a>
-    <button class="button-7" onclick="download()">Download LSEdit Debug Build (24.02.2022)</button>
+    <button class="button-37" onclick="download()">Download LSEdit Debug Build (24.02.2022)</button>
 
     <script>
         function download() {
